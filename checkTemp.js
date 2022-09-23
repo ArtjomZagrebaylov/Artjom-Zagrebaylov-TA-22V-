@@ -3,20 +3,19 @@ let max = 100;
 let rand = Math.random();
 let randomNumber = Math.floor(rand*(max-min+1))+min;*/
 
-let temp = 30;
-let checkTemp;
+//let temp = 30;
+function checkTemp(temp)
 
-/*const checkTemp = (t) => */
 {
    
     if (temp <= 20)
-        checkTemp = -1;
+        return  -1;
      
    else if (temp >= 40)
-       checkTemp = 1;
+       return  1;
     
    else if (temp >= 21)
-        checkTemp = 0;
+        return  0;
 
 }
-console.log(checkTemp);
+console.log(checkTemp(5));
